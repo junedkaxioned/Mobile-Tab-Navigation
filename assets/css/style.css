@@ -102,34 +102,113 @@ li {
 }
 
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
 
+.mobile-tab-navigation {
+  background:#B88ACB;
+}
 
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-view {
+  width: 270px;
+  height: 472px;
+  border: 3px solid #eee;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-images .image {
+  width: 100%;
+  height: calc(100% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.tab-images .show-image { opacity: 1; }
+
+.tab-lists {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: #fff;
+}
+
+.tab-lists li {
+  flex: 1;
+  text-align: center;
+}
+
+.tab-list {
+  padding: 10px;
+  margin: 2px 0;
+  color: #777;
+  cursor: pointer;
+  font-size: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.active,
+.tab-list:hover {
+  color: #8e44ad;
+}
+
+.home::before {
+  content: "\f015";
+  padding-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
+
+.work::before {
+  content: "\f15c";
+  padding-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+
+}
+
+.blog::before {
+  content: "\f02d";
+  padding-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+
+}
+
+.about-us::before {
+  content: "\f0c0";
+  padding-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
